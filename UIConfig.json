@@ -3,13 +3,46 @@
     "label": "Bluetooth configuration"
   },
   "sections": [
-    "id": "section_bluetooh_configuratio"
-    "element": "section"
-    "label": "Bluetooth configuration"
-    "icon": "bluetooth-b"
-    "saveButton": {
-      "label": "Save"
-      "data": []
+    {
+      "id": "section_bluetooh_configuratio",
+      "element": "section",
+      "label": "Bluetooth configuration",
+      "icon": "bluetooth-b",
+      "onSave": {},
+      "saveButton": {
+        "label": "Save",
+        "data": [
+          "pairable_timeout",
+          "discoverable_timeout",
+          "discoverable"
+        ]
+      },
+      "content": [
+        {
+          "id": "pairable_timeout",
+          "type": "text",
+          "element": "input",
+          "doc": "Pairable timeout[s]",
+          "label": "Pairable timeout",
+          "value": "60"
+        },
+        {
+          "id": "discoverable_timeout",
+          "type": "text",
+          "element": "input",
+          "doc": "Discoverable timeout[s]",
+          "label": "Discoverable timeout",
+          "value": "60"
+        },
+        {
+          "id": "discoverable",
+          "type": "text",
+          "element": "input",
+          "doc": "rrr",
+          "label": "rrr",
+          "value": "qqq"
+        }
+      ]
     }
   ]
 }
